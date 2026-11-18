@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Финансовый путеводитель</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>💰 Финансовый путеводитель</h1>
+        <p>Инструменты и знания для тех, кто хочет приумножить капитал.</p>
+    </header>
+
+    <main>
+        <!-- Блок с калькулятором -->
+        <section class="calc-card">
+            <h2>Калькулятор сложного процента</h2>
+            <p>Узнай, как вырастет твой капитал со временем.</p>
+            
+            <div class="input-group">
+                <label>Стартовый капитал (в рублях):</label>
+                <input type="number" id="startAmount" placeholder="Например, 10000">
+            </div>
+
+            <div class="input-group">
+                <label>Процентная ставка в год (%):</label>
+                <input type="number" id="interestRate" placeholder="Например, 10">
+            </div>
+
+            <div class="input-group">
+                <label>Срок (в годах):</label>
+                <input type="number" id="years" placeholder="Например, 5">
+            </div>
+
+            <button id="calcBtn">Рассчитать</button>
+
+            <div id="result" class="result-box" style="display:none;">
+                <p>Итоговая сумма: <span id="finalAmount">0</span> руб.</p>
+                <p>Чистая прибыль: <span id="profitAmount">0</span> руб.</p>
+            </div>
+        </section>
+
+        <!-- Блок с полезной информацией -->
+        <section class="info-card">
+            <h2>🛡️ Безопасность прежде всего</h2>
+            <ul>
+                <li><strong>Не верьте обещаниям «быстрых процентов».</strong> Если кто-то обещает 100% в день — это мошенники.</li>
+                <li><strong>Проверяйте лицензии.</strong> Настоящие брокеры и биржи имеют лицензии ЦБ РФ или зарубежных регуляторов.</li>
+                <li><strong>Инвестируйте только те средства, которые готовы потерять.</strong></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Финансовый путеводитель. Сделано в образовательных целях.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
